@@ -1,0 +1,164 @@
+﻿Area,CourseNumber,Title,Credit,Quarter,EarlyLate,StartTime,EndTime,MinBid,AvgBid,Prereq
+DIR,7616,Leadership Ride: Lesson in Leadership - Gettysburg,1.5,EQtr4,None,None,None,1,600,None
+DIR,8500IVS,Special Topics Seminar: Innovating Value for Stakeholders: The Case of Fintech,1.5,EQtr4,None,None,None,77,180,None
+DWC,8031,Doing Business in Mexico,1.5,EQtr4,None,None,None,77,180,None
+DWC,8519,Entrepreneurship and Innovation -Israel,1.5,EQtr4,None,None,None,77,180,None
+DWC,8522,Luxury and Exports-Italy,1.5,EQtr4,None,None,None,77,180,None
+DWC,8529,Lessons from South Africa on Public-Private Sector Cooperation to Grow an Economy- South Africa,1.5,EQtr4,None,None,None,77,180,None
+ENTRE,8518,Creativity and Design in Barcelona,1.5,EQtr4,None,None,None,105,544.5,None
+ETH,8274,Leadership When it Really Counts,1.5,EQtr4,None,None,None,1,43,None
+FIN,8173,Global Capital Markets,1.5,EQtr4,None,None,None,200,478,7603
+FIN,8623,Financial Trading,1.5,EQtr4,None,None,None,4,61,7603
+GEM,8526,Global Competitiveness: A New Zealand Perspective ,1.5,EQtr4,None,None,None,153,300,None
+LDSP,8514,NOLS Experiential Leadership -Patagonia,1.5,EQtr4,None,None,None,815,1001,None
+LDSP,8514,NOLS Experiential Leadership -Patagonia,1.5,EQtr4,None,None,None,815,1001,None
+MKT,8500D,Marketing Technology Products,1.5,EQtr4,None,None,None,77,180,None
+MKT,8620,Constructing Superior Brand Positions,1.5,EQtr4,None,None,None,1,90,None
+DWC,8517,Navigating Difficult Waters: Addressing Tough Problems in Business and Society-Singapore/Sri Lanka,1.5,J-Term,None,None,None,1,80,None
+DWC,8645,Honoring the Traditions of the Past while Confronting the Challenges of the Future-Dubai/Bahrain,1.5,J-Term,None,None,None,1,80,None
+ENTRE,8633,Software Development,1.5,J-Term,None,None,None,1,75,None
+LDSP,8439,Leadership and Cultures of Trust & Innovation (January one-week course),1.5,J-Term,None,None,None,1,30.5,None
+ACC,8190,Taxation and Management Decisions,1.5,Qtr1,LateWeek,10:00AM,11:25AM,1.5,148,None
+ACC,8190,Taxation and Management Decisions,1.5,Qtr1,LateWeek,11:45AM,1:10PM,1.5,148,None
+ACC,8410,Financial Statement Analysis and Corporate Valuation,1.5,Qtr1,LateWeek,10:00AM,11:25AM,7,100,None
+ACC,8465,Management Planning and Control Systems,1.5,Qtr1,LateWeek,8:00AM,9:25AM,1,55,None
+DIR,8164,Experiential Leadership Development Lab ,1.5,Qtr1,None,None,None,77,180,None
+DIR,8500Z,Character Traits and Success,1.5,Qtr1,MondayOnly,7:00PM,8:25PM,77,180,None
+DIR,8509,Tactical Topics for Entrepreneurship Through Acquisition,1.5,Qtr1,LateWeek,11:45AM,1:10PM,77,180,None
+ENTRE,8210,Starting New Ventures,1.5,Qtr1,EarlyWeek,11:45AM,1:10PM,63.5,156.25,None
+ENTRE,8210,Starting New Ventures,1.5,Qtr1,EarlyWeek,2:45PM,4:10PM,63.5,156.25,None
+ENTRE,8290,Venture Capital,1.5,Qtr1,EarlyWeek,10:00AM,11:25AM,105,171,None
+ENTRE,8632,Software Design,1.5,Qtr1,LateWeek,10:00AM,11:25AM,1,88,None
+FIN,7603,Valuation in Financial Markets,1.5,Qtr1,EarlyWeek,8:00AM,9:25AM,1,143,None
+FIN,7603,Valuation in Financial Markets,1.5,Qtr1,EarlyWeek,10:00AM,11:25AM,1,143,None
+FIN,8170,Managerial Finance,1.5,Qtr1,LateWeek,2:45PM,4:10PM,1,102,7603
+FIN,8453,Entrepreneurial Finance and Private Equity,1.5,Qtr1,EarlyWeek,8:00AM,9:25AM,198.25,332.625,7603
+FIN,8453,Entrepreneurial Finance and Private Equity,1.5,Qtr1,LateWeek,10:00AM,11:25AM,198.25,332.625,7603
+FIN,8453,Entrepreneurial Finance and Private Equity,1.5,Qtr1,EarlyWeek,11:45AM,1:10PM,198.25,332.625,7603
+FIN,8453,Entrepreneurial Finance and Private Equity,1.5,Qtr1,LateWeek,11:45AM,1:10PM,198.25,332.625,7603
+GEM,8626,Global Economics of Water,1.5,Qtr1,EarlyWeek,2:45PM,4:10PM,1,77.5,None
+LDSP,8308,Leadership Learning Lab,1.5,Qtr1,None,8:00AM,9:25AM,77,180,None
+MISC,8401,Cross Cultural Internship,0,Qtr1,None,None,None,77,180,None
+MKT,8047,Pricing,1.5,Qtr1,None,None,None,1,15,None
+MKT,8500BLP,Building and Leading a Professional Sales Force,1.5,Qtr1,MondayOnly,2:45PM,5:55PM,1,100,None
+NEG,8930,Negotiations,1.5,Qtr1,EarlyWeek,10:00AM,11:25AM,1,95.5,None
+OPS,8800,Operations Strategy,1.5,Qtr1,EarlyWeek,11:45AM,1:10PM,1,50,None
+QA,7600,Data Analysis and Optimization,1.5,Qtr1,EarlyWeek,2:45PM,4:10PM,26,228,None
+RDGS,8240,Reading Seminar in Management I,1.5,Qtr1,MondayOnly,2:45PM,4:10PM,16.66666667,82.41666667,None
+RDGS,8240,Reading Seminar in Management I,1.5,Qtr1,TuesdayOnly,2:45PM,4:10PM,16.66666667,82.41666667,None
+RDGS,8240,Reading Seminar in Management I,1.5,Qtr1,MondayOnly,4:30PM,5:55PM,16.66666667,82.41666667,None
+RDGS,8240,Reading Seminar in Management I,1.5,Qtr1,TuesdayOnly,4:30PM,5:55PM,16.66666667,82.41666667,None
+RDGS,8270,Reading Seminar in Management III: Thomas Jefferson,1.5,Qtr1,MondayOnly,4:30PM,5:55PM,268.5,346.25,None
+STRAT,8870,Strategy Seminar,1.5,Qtr1,EarlyWeek,11:45AM,1:10PM,77,180,None
+STRAT,8870,Strategy Seminar,1.5,Qtr1,EarlyWeek,2:45PM,4:10PM,77,180,None
+TOM,8636,Digital Product Management ,1.5,Qtr1,LateWeek,11:45AM,1:10PM,2,141,None
+DIR,8500RR,Mayo Center Reading Seminar: PART I: Discretionary Asset Managers ,1.5,"Qtr1,Qtr2",ThursdaysOnly,4:30PM,9:00PM,77,180,None
+DIR,8500TT,Maximizing Leadership Potential in Sports and Business ,1.5,"Qtr1,Qtr2",TuesdayOnly,6:00PM,8:00PM,400,466.5,None
+DIR,8500YY,Venture Velocity ,3,"Qtr1,Qtr2",MondayOnly,4:30PM,6:15PM,77,180,None
+DIR,8500ZZT,Due Diligence in Seed Funds ,1.5,"Qtr1,Qtr2",WednesdayOnly,4:30PM,5:55PM,77,180,None
+FIN,8008,"The Financial Crisis Ten Years Later: Politics, Markets, and Institutions",3,"Qtr1,Qtr2",None,None,None,77,180,7603
+FIN,8500MM,Applied Security Analysis,1.5,"Qtr1,Qtr2",MondayOnly,4:30PM,5:55PM,100,308.5,7603
+GEN,8260,The Practice of General Management ,3,"Qtr1,Qtr2",LateWeek,10:00AM,11:25AM,103,330,None
+GEN,8375,Leadership Lessons of Eight Transformational U.S. Presidents Part I,1.5,"Qtr1,Qtr2",None,None,None,77,180,None
+IND,8699,Darden Consulting Projects Fall Only,1.5,"Qtr1,Qtr2",None,None,None,0,0,None
+IND,8699,Darden Consulting Projects Fall Only,1.5,"Qtr1,Qtr2",None,None,None,0,0,None
+LDSP,8750,Managerial Psychology ,3,"Qtr1,Qtr2",LateWeek,4:30PM,5:55PM,5,320,None
+QA,8496,Data Science in Business ,3,"Qtr1,Qtr2",LateWeek,11:45AM,1:10PM,400.5,705,None
+QA,8496,Data Science in Business ,3,"Qtr1,Qtr2",LateWeek,2:45PM,4:10PM,400.5,705,None
+DIR,8500PP,Second Year Coaching and Career Education (Part 1),1.5,Qtr2,None,None,None,0,0,None
+DIR,8500Z,Character Traits and Success,1.5,Qtr2,WednesdayOnly,7:00PM,8:25PM,77,180,None
+DIR,8520IA,Darden Capital Management Part I,1.5,Qtr2,None,None,None,0,0,None
+DIR,8634,Interviewing Experiential Field-Based Elective: Identifying Top Talent,1.5,Qtr2,None,None,None,77,180,None
+ENTRE,8106,Acquisition of Closely-Held Enterprises,1.5,Qtr2,LateWeek,10:00AM,11:25AM,120,151,None
+ETH,8203,Business Ethics through Literature,1.5,Qtr2,EarlyWeek,2:45PM,4:10PM,1,86,None
+ETH,8448,Ultimate Questions Responsible Management and Value in Business,1.5,Qtr2,EarlyWeek,10:00AM,11:25AM,51,75,None
+FIN,8171,International Corporate Finance,1.5,Qtr2,EarlyWeek,11:45AM,1:10PM,1,68,7603
+FIN,8423,Corporate Financial Policies,1.5,Qtr2,EarlyWeek,8:00AM,9:25AM,1,90,7603
+FIN,8423,Corporate Financial Policies,1.5,Qtr2,EarlyWeek,10:00AM,11:25AM,1,90,7603
+FIN,8426,Derivative Securities: Options and Futures,1.5,Qtr2,LateWeek,11:45AM,1:10PM,1,55,7603
+FIN,8444,Investments,1.5,Qtr2,LateWeek,8:00AM,9:25AM,77,205.75,7603
+FIN,8444,Investments,1.5,Qtr2,LateWeek,10:00AM,11:25AM,77,205.75,7603
+GEM,8022,Transforming Societies,1.5,Qtr2,EarlyWeek,4:30PM,5:55PM,284,300.5,None
+GEM,8481,Global Industry Economics,1.5,Qtr2,LateWeek,2:45PM,4:10PM,1,100,None
+GEM,8535,Growth and Business in Emerging Markets ,1.5,Qtr2,LateWeek,10:00AM,11:25AM,1,100,None
+GEN,8030,Challenges in Health Care: A System Overview ,1.5,Qtr2,LateWeek,10:00AM,11:25AM,1,73.5,None
+GEN,8045,Introduction to Real Estate Finance and Development,1.5,Qtr2,EarlyWeek,8:00AM,9:25AM,1,35,None
+GEN,8280,Introduction to Business Law,1.5,Qtr2,EarlyWeek,4:30PM,5:55PM,1,50,None
+GEN,8430,Systems Thinking and Design,1.5,Qtr2,LateWeek,11:45AM,1:10PM,77,180,None
+GEN,8627,Understanding the Nonprofit Sector,1.5,Qtr2,LateWeek,2:45PM,4:10PM,1,72.5,None
+LDSP,8500F,Military Leadership Laboratory - Former Military,1.5,Qtr2,None,None,None,0,0,None
+MKT,8464,Hot Topics in Marketing,1.5,Qtr2,EarlyWeek,11:45AM,1:10PM,50,120,8620
+MKT,8630,Marketing Analytics,1.5,Qtr2,None,None,None,77,180,None
+OB,8027,Interpersonal Behavior,1.5,Qtr2,LateWeek,2:45PM,4:10PM,77,180,None
+OPS,8130,Prototyping and Product Development I,1.5,Qtr2,EarlyWeek,2:45PM,4:10PM,57,131,None
+QA,8015,Behavioral Decision Making,1.5,Qtr2,EarlyWeek,11:45AM,1:10PM,20,100,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr2,MondayOnly,2:45PM,4:10PM,28.625,70.9375,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr2,TuesdayOnly,2:45PM,4:10PM,28.625,70.9375,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr2,MondayOnly,4:30PM,5:55PM,28.625,70.9375,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr2,TuesdayOnly,4:30PM,5:55PM,28.625,70.9375,None
+RDGS,8270,Reading Seminar in Management III: Thomas Jefferson,1.5,Qtr2,MondayOnly,4:30PM,5:55PM,268.5,346.25,None
+STRAT,8011,Ambicultural Strategy,1.5,Qtr2,EarlyWeek,2:45PM,4:10PM,1,3,None
+STRAT,8016,Strategic Intuition and Eastern Philosophy,1.5,Qtr2,EarlyWeek,11:45AM,1:10PM,1,76,None
+STRAT,8016,Strategic Intuition and Eastern Philosophy,1.5,Qtr2,EarlyWeek,2:45PM,4:10PM,1,76,None
+DIR,8500Y,Business Development for Personal and Career Success,1.5,Qtr3,None,None,None,77,180,None
+DIR,8500Z,Character Traits and Success,1.5,Qtr3,MondayOnly,7:00PM,8:25PM,77,180,None
+ENTRE,8500AC,Entrepreneur's Guide to Business Structures & Capital Formation ,1.5,Qtr3,EarlyWeek,11:45AM,1:10PM,2,100,None
+ETH,8268,Leadership and Innovation in Education ,1.5,Qtr3,WednesdayOnly,6:30PM,8:30PM,1,2,None
+ETH,8489,Philosophy and Business: Business in Society,1.5,Qtr3,LateWeek,10:00AM,11:25AM,200,243,None
+FIN,8445,Portfolio Management,1.5,Qtr3,EarlyWeek,11:45AM,1:10PM,1,117.5,7603
+FIN,8470,Corporate Financing,1.5,Qtr3,LateWeek,8:00AM,9:25AM,1.5,108.75,7603
+FIN,8470,Corporate Financing,1.5,Qtr3,LateWeek,10:00AM,11:25AM,1.5,108.75,7603
+FIN,8490,Financial Institutions and Markets,1.5,Qtr3,LateWeek,11:45AM,1:10PM,171,331,7603
+FIN,8490,Financial Institutions and Markets,1.5,Qtr3,LateWeek,2:45PM,4:10PM,171,331,7603
+FIN,8625,Mergers and Acquisitions,1.5,Qtr3,EarlyWeek,8:00AM,9:25AM,7,153.25,7603
+FIN,8625,Mergers and Acquisitions,1.5,Qtr3,EarlyWeek,10:00AM,11:25AM,7,153.25,7603
+GEM,7602,Global Financial Markets,1.5,Qtr3,EarlyWeek,2:45PM,4:10PM,77,180,None
+GEM,8330,Business-Government Relations,1.5,Qtr3,EarlyWeek,4:30PM,5:55PM,1,50,None
+GEM,8638,Artificial Intelligence and the Future of Work,1.5,Qtr3,EarlyWeek,10:00AM,11:25AM,1,102,None
+GEN,8500C,Solutions and Innovations in Health Care,1.5,Qtr3,LateWeek,10:00AM,11:25AM,1,50,None
+LDSP,8019,Defining Moments,1.5,Qtr3,TuesdayOnly,1:25PM,4:15PM,65,115,None
+LDSP,8019,Defining Moments,1.5,Qtr3,WednesdayOnly,1:25PM,4:15PM,65,115,None
+LDSP,8701,Leading Strategic Change,1.5,Qtr3,LateWeek,2:45PM,4:10PM,77,180,None
+LDSP,8701,Leading Strategic Change,1.5,Qtr3,LateWeek,4:30PM,5:55PM,77,180,None
+MC,8320,Leadership Communication During Times of Disruption and Transformation,1.5,Qtr3,EarlyWeek,4:30PM,5:55PM,1,32,None
+MKT,8012,Deviant Marketing,1.5,Qtr3,EarlyWeek,10:00AM,11:25AM,311,374.5,None
+MKT,8033,Digital Marketing,1.5,Qtr3,EarlyWeek,11:45AM,1:10PM,5,118,None
+OPS,8624,Management of Service Operations,1.5,Qtr3,LateWeek,11:45AM,1:10PM,1,31,None
+OPS,8830,Supply Chain Management ,1.5,Qtr3,LateWeek,2:45PM,4:10PM,1,63,None
+RDGS,8240,Reading Seminar in Management I,1.5,Qtr3,MondayOnly,2:45PM,4:10PM,16.66666667,82.41666667,None
+RDGS,8240,Reading Seminar in Management I,1.5,Qtr3,MondayOnly,4:30PM,5:55PM,16.66666667,82.41666667,None
+RDGS,8270,Reading Seminar in Management III: Thomas Jefferson,1.5,Qtr3,MondayOnly,4:30PM,5:55PM,268.5,346.25,None
+STRAT,8305,East-West Strategy Seminar,1.5,Qtr3,EarlyWeek,2:45PM,4:10PM,40,125,None
+STRAT,8310,Competitive Dynamics ,1.5,Qtr3,EarlyWeek,11:45AM,1:10PM,1,50.5,None
+STRAT,8468,Organic Growth: The Innovation Challenge for Public Companies,1.5,Qtr3,LateWeek,10:00AM,11:25AM,1,48.5,None
+DIR,8500RRR,Mayo Center Reading Seminar: PART II: Quantitative Asset Managers ,1.5,"Qtr3,Qtr4",ThursdaysOnly,None,None,77,180,None
+DIR,8500U,Mead Liberal Arts Seminar,1.5,"Qtr3,Qtr4",WednesdayOnly,4:30PM,5:55PM,400,499,None
+DIR,8500YY,Venture Velocity ,3,"Qtr3,Qtr4",MondayOnly,4:30PM,6:15PM,77,180,None
+DIR,8500ZTZ,Due Diligence in Seed Funds Part II,1.5,"Qtr3,Qtr4",WednesdayOnly,4:30PM,5:55PM,77,180,None
+FIN,8172,Financial Crises and Civic Reaction,3,"Qtr3,Qtr4",EarlyWeek,10:00AM,11:25AM,200,361.5,7603
+GEN,8376,Leadership Lessons of Eight Transformational U.S. Presidents -Part II,1.5,"Qtr3,Qtr4",None,None,None,77,180,None
+GEN,8400,General Managers Taking Action,3,"Qtr3,Qtr4",EarlyWeek,10:00AM,11:25AM,125.5,305.75,None
+GEN,8400,General Managers Taking Action,3,"Qtr3,Qtr4",LateWeek,10:00AM,11:25AM,125.5,305.75,None
+GEN,8459,Innovation and Design Experience ,3,"Qtr3,Qtr4",LateWeek,11:45AM,1:10PM,100,400,None
+GEN,8500ZZZ,Business in Society: Stakeholder Management and Smart Regulations ,1.5,"Qtr3,Qtr4",None,None,None,2,320,None
+IND,8699,Darden Consulting Projects Spring Only,1.5,"Qtr3,Qtr4",None,None,None,0,0,None
+ACC,8160,Taxation of Mergers and Acquisitions,1.5,Qtr4,LateWeek,8:00AM,9:25AM,77,180,None
+DIR,8500QQ,Second Year Coaching and Career Education (Part 2),1.5,Qtr4,None,None,None,0,0,None
+DIR,8520IAA,Darden Capital Management Part II,3,Qtr4,None,None,None,0,0,None
+ETH,8989,Critical and Creative Thinking in Business,1.5,Qtr4,LateWeek,10:00AM,11:25AM,300,410,None
+FIN,8450,Hot Topics in Finance,1.5,Qtr4,LateWeek,11:45AM,1:10PM,160,248,7603
+FIN,8497,Impact Investing,1.5,Qtr4,EarlyWeek,11:45AM,1:10PM,80,200,7603
+FIN,8639,Corporate Financial Restructuring ,1.5,Qtr4,LateWeek,10:00AM,11:25AM,1,70,7603
+GEM,8023,China in the World Economy,1.5,Qtr4,LateWeek,11:45AM,1:10PM,1,100,None
+GEN,8476,Collaboration Lab,1.5,Qtr4,EarlyWeek,2:45PM,4:10PM,650,703,None
+LDSP,8706,"Leadership, Diversity and Leveraging Difference",1.5,Qtr4,EarlyWeek,11:45AM,1:10PM,31,94,None
+MC,7620,Interpersonal Communication,1.5,Qtr4,EarlyWeek,4:30PM,5:55PM,1,26,None
+OB,8042,The Spirit of the New Workplace,1.5,Qtr4,LateWeek,2:45PM,4:10PM,1,75,None
+OPS,8466,Emerging Topics in Technology & Operations Management,1.5,Qtr4,EarlyWeek,11:45AM,1:10PM,1,50.5,None
+QA,8180,Hot Topics in Analytics ,1.5,Qtr4,EarlyWeek,4:30PM,5:55PM,1,90,None
+QA,8631,Optimization,1.5,Qtr4,EarlyWeek,2:45PM,4:10PM,77,180,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr4,MondayOnly,2:45PM,4:10PM,28.625,70.9375,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr4,TuesdayOnly,2:45PM,4:10PM,28.625,70.9375,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr4,MondayOnly,4:30PM,5:55PM,28.625,70.9375,None
+RDGS,8250,Reading Seminar in Management II,1.5,Qtr4,TuesdayOnly,4:30PM,5:55PM,28.625,70.9375,None
+RDGS,8270,Reading Seminar in Management III: Thomas Jefferson,1.5,Qtr4,MondayOnly,4:30PM,5:55PM,268.5,346.25,None
