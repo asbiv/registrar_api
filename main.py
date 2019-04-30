@@ -31,8 +31,7 @@ def build_probs(Xi, local_path):
 
 #TEST DATA
 #TODO - Makes test data a JSON object
-tmp_probs = build_probs(X.iloc[0:1, :], local_path)
-model_df = pd.DataFrame({'course_number': y.columns, 'prob': tmp_probs})
+model_df = pd.DataFrame({'course_number': y.columns, 'prob': build_probs(X.iloc[0:1, :], local_path)})
 
 
 #######################
