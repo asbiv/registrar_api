@@ -38,5 +38,5 @@ model_df = pd.DataFrame({'course_number': y.columns, 'prob': build_probs(X.iloc[
 ##FOLD IN ERIC'S WORK##
 #######################
 json_out = run_erics_opt(model_df)
-print('Run time of ' + str(round((time.time() - start_time)/60,2)) + ' minutes')
 print(json_out)
+print('Run time of ' + str(round((time.time() - start_time)/60,2)) + ' minutes')
