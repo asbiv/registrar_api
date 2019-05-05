@@ -23,7 +23,7 @@ y = pd.get_dummies(courses_by_student_dat['course_number'].astype(str))
 
 #X:
 int_list = ['bachelors_grad_year', 'age']
-oh_list = ['grade', 'bachelors_major_category', 'masters_degree', 'citizenship_country']
+oh_list = ['bachelors_major_category', 'masters_degree', 'citizenship_country']
 err_list = ['consulting_job', 'finance_job', 'marketing_job', 'entrepreneurship_job',
             'non_profit_job', 'tech_job', 'corporate_job',
             'consulting_intern', 'finance_intern', 'marketing_intern', 'entrepreneurship_intern',
@@ -58,6 +58,8 @@ def preprocess_X(df, int_list, oh_list, err_list):
             df[column][df[column] == 0] = col_mean
         elif column in err_list:
             df[column] = df[column].map(lambda x: replace_with_one(replace_with_zero(x))).astype(int)
+        elif column == 'citizenship_country':
+            df.loc[df['citizenship_country'] != 'USA', 'citizenship_country'] = 'non-USA'
     df = pd.get_dummies(df, columns=oh_list)
     return(df)
 
