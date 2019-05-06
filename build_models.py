@@ -8,8 +8,12 @@ from sklearn import preprocessing
 from sklearn.linear_model import LogisticRegression
 import pulp as plp
 
-#Stuff for spyder
-local_path = '/Users/Ab/Google_Drive/MBA/Y2-2019_q3/Q3Q4_DIS/registrar_model/'
+#SET LOCAL PATH IF IN SPYDER
+if 'SPYDER_ARGS' in os.environ:
+    local_path = '/Users/Ab/Google_Drive/MBA/Y2-2019_q3/Q3Q4_DIS/registrar_model/'
+    os.chdir(local_path)
+else:
+    local_path = ''
 
 #TODO
 #1. Read in and one-hot data
