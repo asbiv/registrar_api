@@ -1,0 +1,1 @@
+web: python registrar-api.py
