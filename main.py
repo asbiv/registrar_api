@@ -1,3 +1,5 @@
+#USE TO EXECUTE LOCALLY
+
 import time
 start_time = time.time()
 ##PREP ENV
