@@ -2,6 +2,7 @@ from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
 import pickle
 import numpy as np
+import pandas as pd
 
 from build_models import *
 
@@ -29,7 +30,9 @@ class build_calendar(Resource):
     def get(self):
         args = parser.parse_args()
         user_query = args['query']
-        query_df = pd.DataFrame(pd.read_json(user_query, typ='series')).transpose()
+        print(user_query)
+        query_json = pd.read_json(user_query, typ='series')
+        query_df = pd.DataFrame(query_json).transpose()
         print('query df shape:' + str(query_df.shape))
         
         model_df = pd.DataFrame({'course_number': y.columns, 'prob': build_probs(query_df, local_path)})
