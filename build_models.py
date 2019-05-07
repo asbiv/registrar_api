@@ -111,6 +111,11 @@ def run_erics_opt(model_df):
     area_dummy_df = pd.get_dummies(active_classes_model_no_dummies_df[['Area']], prefix="d_")
     prereq_dummy_df = pd.get_dummies(active_classes_model_no_dummies_df[['Prereq']], prefix="d_")
     
+    # Create dummy variables for each unique timeslot (quarter, early/late wk, time), remove dummy variable columns with 'none' values
+    active_classes_model_df['uniqueTimeSlot'] = dummy_df['d__Qtr1_affected'].map(str) + dummy_df['d__Qtr2_affected'].map(str) + dummy_df['d__Qtr3_affected'].map(str) + dummy_df['d__Qtr4_affected'].map(str) + dummy_df['d__EarlyWeek_affected'].map(str) + dummy_df['d__LateWeek_affected'].map(str) + active_classes_model_df['StartTime']
+    uniqueTimeSlot_dummy_df = pd.get_dummies(active_classes_model_df[['uniqueTimeSlot']], prefix="d_")
+    uniqueTimeSlot_dummy_df = uniqueTimeSlot_dummy_df[uniqueTimeSlot_dummy_df.columns.drop(list(uniqueTimeSlot_dummy_df.filter(regex='None')))]
+
     #Build optimization model
     register_binary = plp.LpVariable.dicts("register_binary",((i) for i in active_classes_model_df.index), cat='Binary')
     model = plp.LpProblem("MaxProb", plp.LpMaximize)
@@ -144,67 +149,8 @@ def run_erics_opt(model_df):
             except: 0
     
     ### Constraints: can select only one course per timeslot
-    # define function
-    def timeslot_constraint(quarter,earlyLate,time):
-        sum([register_binary[x] * 
-                  active_classes_model_df[quarter][x] * 
-                  active_classes_model_df[earlyLate][x] *
-                  active_classes_model_df[time][x]
-                  for x in active_classes_model_df.index]) <= 1
-
-    # Apply constriants so that only one course can be selected for each time slot
-    # Q1 specific
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__EarlyWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__EarlyWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__EarlyWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__EarlyWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__EarlyWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__EarlyWeek_affected','d__4:30PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__LateWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__LateWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__LateWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__LateWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__LateWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr1_affected','d__LateWeek_affected','d__4:30PM'))
-    # Q2 specific
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__EarlyWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__EarlyWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__EarlyWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__EarlyWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__EarlyWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__EarlyWeek_affected','d__4:30PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__LateWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__LateWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__LateWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__LateWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__LateWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr2_affected','d__LateWeek_affected','d__4:30PM'))
-    # Q3 specific
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__EarlyWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__EarlyWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__EarlyWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__EarlyWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__EarlyWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__EarlyWeek_affected','d__4:30PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__LateWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__LateWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__LateWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__LateWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__LateWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr3_affected','d__LateWeek_affected','d__4:30PM'))
-    # Q4 specific
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__EarlyWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__EarlyWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__EarlyWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__EarlyWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__EarlyWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__EarlyWeek_affected','d__4:30PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__LateWeek_affected','d__8:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__LateWeek_affected','d__10:00AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__LateWeek_affected','d__11:45AM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__LateWeek_affected','d__1:25PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__LateWeek_affected','d__2:45PM'))
-    model += plp.LpConstraint(timeslot_constraint('d__Qtr4_affected','d__LateWeek_affected','d__4:30PM'))
+    for column in uniqueTimeSlot_dummy_df.columns: 
+        model += sum([register_binary[x] * uniqueTimeSlot_dummy_df[column][x] for x in active_classes_model_df.index]) <= 1
 
     #Solve and export solution
     model.solve()
