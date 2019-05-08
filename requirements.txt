@@ -8,4 +8,5 @@ scikit-image==0.14.0
 scikit-learn==0.19.2
 scipy==1.1.0
 Flask-RESTful>=0.3.7
+Flask-Cors==3.0.6
 PuLP==1.6.9

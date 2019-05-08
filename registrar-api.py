@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
+from flask_cors import CORS
 import pickle
 import numpy as np
 import pandas as pd
@@ -9,6 +10,7 @@ from build_models import *
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 
 def build_probs(Xi, local_path):
@@ -48,7 +50,6 @@ class build_calendar(Resource):
                     new_query['citizenship_country_non-USA'] = 1
             else:
                 new_query[key] = int(eric_input[key])
-        print('new query:' + str(new_query))
         
         query_df = pd.DataFrame.from_dict(new_query, orient='index').transpose()
         #query_df = pd.DataFrame(pd.read_json(new_query, typ='series')).transpose()
